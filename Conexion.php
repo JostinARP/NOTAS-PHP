@@ -4,7 +4,7 @@ class Conexion{
 
 	protected $db;
 	private $drive= "mysql";
-    private $host= "localhot";
+    private $host= "localhost";
     private $dbname= "notas2023";
     private $user="root";
     private $password= "";
@@ -15,7 +15,7 @@ class Conexion{
 
             $db->setattribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            return $db;
+           // return $db;
             echo "Conexion realizada";
 
         }catch(PDOException $e){
